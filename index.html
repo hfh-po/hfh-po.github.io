@@ -1,15 +1,84 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="pt-BR">
 <head>
-<title>Olá Mundo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows XP</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 </head>
 <body>
-
-<h1>Meu nome é</h1>
-<p>Luis E. de J. Pires<p>
-<h2>UEPG<h2>
-<p>Talento Tech
-
+    <div id="Windows_XP">
+        <div class="area_de_trabalho">
+            <div id="Lixeira" class="desktop_icons selected">
+                <img src="https://www.clipartmax.com/png/full/92-925325_modernxp-76-trash-full-icon-windows-xp-recycle-bin-icon-png.png" alt="Lixeira">
+                <span>Lixeira</span>
+            </div>
+            <div id="internet_explorer" class="desktop_icons">
+                <img src="https://files.tecnoblog.net/wp-content/uploads/2009/03/internet-explorer-8.png" alt="Internet Explorer">
+                <span>Internet Explorer</span>
+            </div>
+            <div id="meu_computador" class="desktop_icons">
+            <img src="https://th.bing.com/th/id/R.f4c9a1d711fe4bd022e0a20f47817cc7?rik=7OjXDPz6MwTyDg&riu=http%3a%2f%2fi.imgur.com%2fWLQXHbd.png&ehk=83lZ%2fDbMqspsbNVbk1H5f2EFjNWc1qLJS9O%2fF1l4Al4%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Meu Computador">
+            <span>Meu computador</span>
+            </div>
+        </div>
+        <div id="menu_iniciar">
+            <div class="topo_iniciar">
+                <div class="avatar"></div>
+                <h2 class="usuario">Luis E. de J. Pires</h2>
+            </div>
+            <div class="miolo">
+                <div class="col" style="border-right: 3px solid #bcd2e0;">
+                    <div id="internet_explorer_iniciar" class="item_iniciar">
+                        <img width="50" src="https://files.tecnoblog.net/wp-content/uploads/2009/03/internet-explorer-8.png" alt="Internet Explorer">
+                        <span><strong>Internet</strong><br>Internet Explorer</span>
+                    </div>
+                    <div id="windows_midia_player" class="item_iniciar">
+                        <img width="50" src="https://icons.iconarchive.com/icons/hopstarter/software/256/Windows-Media-Player-icon.png" alt="Windows Mídia Player">
+                        <span>Windows Mídia Player</span>
+                    </div>
+                    <div id="windows_messenger_iniciar" class="item_iniciar">
+                        <img width="50" src="https://th.bing.com/th/id/OIP.qHC-ymYaoh1BW_a7Q38ELgAAAA?rs=1&pid=ImgDetMain" alt="Windows Messenger">
+                        <span>Windows Messenger</span>
+                    </div>
+                </div>
+                <div class="col" style="background: #cfe5fa;">
+                    <div id="meus_documentos" class="item_iniciar">
+                        <img width="25" src="https://static.wikia.nocookie.net/logopedia/images/7/78/My_Documents_2001.png" alt="Meus Documentos">
+                        <span>Meus Documentos</span>
+                    </div>
+                    <div id="minhas_fotos" class="item_iniciar">
+                        <img width="25" src="https://static.wikia.nocookie.net/logopedia/images/8/86/My_Pictures_WinXP.png" alt="Minhas Fotos">
+                        <span>Minhas Fotos</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_iniciar">
+                <div class="btn_footer">
+                    <img width="35" src="https://icons.iconarchive.com/icons/dtafalonso/modern-xp/256/ModernXP-03-System-Lock-icon.png" alt="Fazer Logoff">
+                    <a href="#">Fazer Logoff</a>
+                </div>
+                <div class="btn_footer">
+                    <img width="35" src="https://icons.iconarchive.com/icons/alecive/flatwoken/128/Apps-Dialog-Shutdown-icon.png" alt="Fazer Logoff">
+                    <a href="#">Fazer Logoff</a>
+                </div>
+            </div>
+        </div>
+        <div class="barra_de_tarefas">
+            <button id="iniciar">
+                <img width="30" src="https://icons.iconarchive.com/icons/tatice/operating-systems/128/Windows-icon.png" alt="Iniciar"/>
+                &nbsp; Iniciar
+            </button>
+            <div class="area_de_notificacao">
+                <div class="icon" id="Volume"></div>
+                <div class="icon" id="Mídia"></div>
+                <div class="icon" id="Segurança"></div>
+                <div id="Relógio">--:--</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
